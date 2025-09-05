@@ -1,0 +1,13 @@
+name = "SmallMolecules"
+uuid = "37c0f546-eb30-43a8-a6f2-4e7f23a888f7"
+authors = ["Jan Kuhfeld <jan@kuhfeld.net> and contributors"]
+version = "1.0.0-DEV"
+
+[compat]
+julia = "1.6.7"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
