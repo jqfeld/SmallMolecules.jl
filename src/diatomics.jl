@@ -1,10 +1,11 @@
-struct DiatomicA{SP,LA,SI,ROT,IS <: InversionSymmetry,RS <: ReflectionSymmetry} <: QuantumNumber
+struct DiatomicA{SP,LA,SI,ROT,IS <: InversionSymmetry,RS <: ReflectionSymmetry, NS} <: QuantumNumber
   S::SP
   Lambda::LA
   Sigma::SI
   J::ROT
   inversion_symmetry::IS
   reflection_symmetry::RS
+  nuclear_spin::NS
 end
 
 DiatomicA(S, Lambda, Sigma, J) = DiatomicA(S, Lambda, Sigma, J, nothing, nothing)
